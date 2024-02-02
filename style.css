@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Luckiest+Guy&display=swap');
+
+body{
+    font-family: 'Luckiest Guy', cursive;
+    background-image: url("./assets/fondo.png");
+}
+
+#seleccionar-mascota{
+    display:flex;
+    flex-direction :column;
+    justify-content : center;
+    align-items: center;
+}
+
+.tittle{
+    font-family: 'DotGothic16', sans-serif;
+    color:black;
+    font-size: 60px;
+}
+
+.subtitulo{
+    color:black;
+    font-size: 36px;
+}
+
+.tarjetas,.tarjetas-ataques{
+    display: flex ;
+    gap: 10px;
+}
+.tarjeta {
+    width: 220px;
+    height: 232px;
+    background: #4CB9E7;
+    padding: 10px;
+    box-sizing:border-box;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta img{
+    width: 120px;
+}
+
+.boton-mokepon{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    width: 160px;
+    height: 80px;
+    background: white;
+    padding: 10px;
+    box-sizing:border-box;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px ;
+    color: black;
+}
+input{
+    display: none;
+}
+
+input:checked + label {
+    height: 24vh;
+    border-radius: 52%;
+    background-color: rgba(136,188,209,.8);
+    color: #082432;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+.boton-de-ataque{
+    width: 100px;
+    height: 80px;  
+    font-family: 'Luckiest Guy', cursive;
+    background-color:#4CB9E7;
+    padding: 10px;
+    box-sizing:border-box;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px ;
+}
+#mensajes{
+    display: flex;
+    align-items: center;
+    width: 200px ;
+    height: 120px;
+    background-color:#4CB9E7 ;
+    padding: 10px; 
+    margin: 20px; 
+    border: 20px; 
+    border-radius: 20px;
+    flex-direction:column ;
+}
+
+#boton-reiniciar{
+    font-family: 'Luckiest Guy', cursive;
+    border: 5px black;
+    color: black;
+    background-color: #FFECD6;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 200px 80px;
+    color: black;
+    width: 400px;
+    height: 320px;
+    background: #4CB9E7;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    align-items: start;
+    justify-content: space-evenly;
+    justify-items: stretch;
+
+}
+
+#vidas-jugador, #vidas-enemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media (max-width:360px){
+    .tarjetas,.tarjetas-ataques{
+        flex-direction: column;
+    }
+
+
+}
